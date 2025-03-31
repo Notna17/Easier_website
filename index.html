@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="'https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap'" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/style.css"> <!-- Your custom stylesheet -->
     <title>Лагідна українізація</title>
   </head>
   <body>
-    <div class="headerbg">
-      <div class="header">
+  <div class="headerbg">
+      <div class="header" id="header">
         <div class="left-header">
            <div class="logo"><img style="width: 100px;height: 100px;" src="dist/images/logo.jpg" alt="Лого, на якому зображений український прапор"/> </div>
            <div style="padding: 15px;color: #777777; height: 100px;"><h1> Назва </br> компанії </h1> українізована компанія</div>
@@ -19,6 +19,19 @@
           <div class="header-numbers"> +38 (066) 666-66-66 </br> +38 (066) 666-66-66 <div class="header-feedback">Зворотній зв'язок</div></div>
       </div>
     </div>
+  </div>
+
+  <div class="menubg">
+    <div class="menu">
+      <ul class="menu-list">
+        <li><a class="anchor-styled" href="#header">Головна</a></li>
+        <li><a class="anchor-styled" href="#">Каталог</a></li>
+        <li><a class="anchor-styled" href="#">Доставка і оплата</a></li>
+        <li><a class="anchor-styled" href="dist/price-list.xlsx" id="download_way1" download>Лист цін</a></li>
+        <li><a class="anchor-styled" href="#">Контакти</a></li>
+      </ul>
+    </div>
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="dist/main.js"></script> <!-- Your custom script -->
