@@ -182,8 +182,45 @@ body {
   height: 1300px;
 }
 .leftblock {
-  display: flex;
   width: 200px;
+  padding: 0 10px;
+  height: 1300px;
+} // тут і далі лівий блок
+.left-list {
+  padding: 0;
+  color: #767676;
+  list-style: none;
+  font-size: 20px;
+  line-height: 32px;
+}
+.left-sublist {
+  padding: 10 px;
+  color: #767676;
+  list-style-type: disc;
+  font-size: 14px;
+  line-height: 22px;
+}
+.anchor-styledL {
+  text-decoration: none;
+  color: inherit;
+}
+.anchor-styledL:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.left-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px 0px 0px;
+  width: 200px;
+}
+
+
+
+.rightblock {
+  display: flex;
+  width: 780px;
   padding: 0 10px;
   height: 1300px;
 }
