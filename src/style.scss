@@ -9,8 +9,46 @@ body {
     height: 230px;
   }
 .header {
-    width: 980px;
-    margin: 0 auto;
-    padding: 0 10px;
-    height: 100%;
+  display: flex;
+  margin: auto;
+  width: 980px;
+  padding: 0 10px;
+  height: 230px;
+}
+.left-header {
+  display: flex;
+  width: 490px;
+  align-items: center; 
+  justify-content: left;
+}
+.right-header {
+  display: flex;
+  width: 490px;
+  align-items: center; 
+  justify-content: right;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: #777777;
+}
+.header-numbers {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  color: #777777;
+  font-weight: light;
+}
+.header-feedback {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 24px;
+  line-height: 22px;
+  color: #777777;
+  font-weight: bold;
+  text-align: right;
+}
+.header-feedback:hover {
+  color: #666666;
+  cursor: pointer;
+   text-decoration: underline dashed;
 }
