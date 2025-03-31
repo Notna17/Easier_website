@@ -31,13 +31,6 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('dist'))
         .pipe(browserSync.stream());
 });
-
-// Переміщення зображень без мініфікації
-gulp.task('images', function () {
-    return gulp.src('src/images/*')
-        .pipe(gulp.dest('dist/images'));
-});
-
 // Запуск локального сервера
 gulp.task('serve', function () {
     browserSync.init({
@@ -51,5 +44,5 @@ gulp.task('serve', function () {
 });
 
 // Завдання за замовчуванням
-gulp.task('default', gulp.series('styles', 'scripts', 'images', 'serve'));
+gulp.task('default', gulp.series('styles', 'scripts', 'serve'));
 
