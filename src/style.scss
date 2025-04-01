@@ -3,6 +3,10 @@ body {
     font-size: 14px;
     line-height: 22px;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
   }
   // header
 .headerbg {
@@ -184,7 +188,7 @@ body {
 .leftblock {
   width: 200px;
   padding: 0 10px;
-  height: 1300px;
+  height: 100%;
 } // тут і далі лівий блок
 .left-list {
   padding: 0;
@@ -199,6 +203,7 @@ body {
   list-style-type: disc;
   font-size: 14px;
   line-height: 22px;
+  display: none;
 }
 .anchor-styledL {
   text-decoration: none;
@@ -217,9 +222,9 @@ body {
 }
 //тут починається правий блок
 .rightblock {
-  width: 780px;
+  width: 100%;
   padding: 0 10px;
-  height: 1300px;
+  height: 100%;
 }
 .goods-row {
   display: flex;
@@ -279,8 +284,10 @@ body {
   width: 100%;
   height: 175px;
   padding: 45px 0px 0px 0px;
+  margin-top: auto;
 }
 .footer {
+  position:sticky;
   display: flex;
   margin: auto;
   width: 980px;
