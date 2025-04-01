@@ -273,3 +273,29 @@ body {
   text-decoration: underline;
   font-size: 24px;
 }
+//тут починається футер
+.footerbg {
+  background: #767676;
+  width: 100%;
+  height: 175px;
+  padding: 45px 0px 0px 0px;
+}
+.footer {
+  display: flex;
+  margin: auto;
+  width: 980px;
+  padding: 0 10px;
+  height: 175px;
+  color: #FFFFFF;
+}
+.footer-list {
+  list-style: none;
+}
+.anchor-styledF {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.anchor-styledF:hover {
+  color: #DCDCDC;
+  text-decoration: underline;
+}

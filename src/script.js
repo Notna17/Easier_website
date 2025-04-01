@@ -15,3 +15,6 @@ document.getElementById("download_way1").addEventListener("click", () => {
 document.getElementById("download_way2").addEventListener("click", () => {
     downloads += 1;
 });
+document.getElementById("download_way3").addEventListener("click", () => {
+    downloads += 1;
+});
