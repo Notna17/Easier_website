@@ -253,3 +253,23 @@ body {
   height: 21px;
   margin-left: auto;
 }
+.right-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  font-size: 14px;
+
+  li {
+    padding: 10px;
+  }}
+.anchor-styledR {
+  text-decoration: none;
+  color: #767676;
+}
+.anchor-styledR:hover {
+  color: #000;
+  text-decoration: underline;
+  font-size: 24px;
+}
