@@ -221,11 +221,35 @@ body {
   padding: 0 10px;
   height: 1300px;
 }
-.goods_row {
+.goods-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 42px 0px;
   width: 780px;
-  height: 340px;
+  height: 378px;
+}
+.good {
+  background-color: #dcdcdc;
+  width: 210px;
+  height: 360px;
+  margin: auto;
+  padding: 20px;
+}
+.good-bottom {
+  display: flex;
+  width: 210px;
+  margin-top: 65px;
+}
+.good-price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  justify-self: left;
+}
+.good-add {
+  justify-self: right;
+  width: 28px;
+  height: 21px;
+  margin-left: auto;
 }
