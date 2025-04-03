@@ -297,6 +297,7 @@ body {
 }
 .footer-list {
   list-style: none;
+  margin: 0;
 }
 .anchor-styledF {
   text-decoration: underline;
@@ -305,4 +306,102 @@ body {
 .anchor-styledF:hover {
   color: #DCDCDC;
   text-decoration: underline;
+}
+// форма
+/* Затемнення фону */
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  z-index: -2001;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.overlay.on {
+  opacity: 0.8;
+}
+/* Модальне вікно */
+.form {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: -2000;
+  width: 466px;
+  height: 580px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.form.on {
+  opacity: 1;
+}
+.form-content {
+  text-align: center;
+  height: 100%;
+  color: #535353;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.form-message {
+  width: 340px;
+  height: 140px;
+  resize: none;
+  border: 1px solid gray;
+  margin: 10px;
+}
+input {
+  width: 330px;
+  height: 30px;
+  border: 1px solid #767676;
+  margin: 10px;
+  padding: 5px;
+}
+input:focus {
+  outline: none;
+  border-color: #767676;
+}
+input.error {
+  border-color: red;
+  background: radial-gradient(white, rgba(255, 0, 0, 0.2));
+  color: red;
+}
+
+input.error::placeholder {
+  color: red;
+  opacity: 1;
+}
+
+.form-message:focus {
+  outline: none;
+  border-color: #767676;
+}
+.form-submit {
+  width: 120px;
+  height: 30px;
+  padding: 5px;
+  background-color: #767676;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 15px;
 }

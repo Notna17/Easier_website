@@ -16,7 +16,7 @@
            <div style="padding: 15px;color: #777777; height: 100px;"><h1> Назва </br> компанії </h1> українізована компанія</div>
         </div>
         <div class="right-header"> 
-          <div class="header-numbers"> +38 (066) 666-66-66 </br> +38 (066) 666-66-66 <div class="header-feedback">Зворотній зв'язок</div></div>
+          <div class="header-numbers"> +38 (066) 666-66-66 </br> +38 (066) 666-66-66 <div class="header-feedback" id="feedbackStart">Зворотній зв'язок</div></div>
       </div>
     </div>
   </div>
@@ -154,7 +154,24 @@
          </div>
     </div>
   </div>
-
+  <div id="overlay" class="overlay"></div>
+  <div id="form" class="form">
+    <div class="form-content">
+      <span class="close">&times;</span>
+      <h2>ЗВОРОТНИЙ ЗВʼЯЗОК</h2>
+      <form>
+        <div class="form-instruction">Ваше ім'я *</div>
+          <input type="text" id="name" name="name" required>
+        <div class="form-instruction">Ваш Email *</div>
+          <input type="email" id="email" name="email" required>
+        <div class="form-instruction">Ваш телефон *</div>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        <div class="form-instruction">Повідомлення</div>
+            <textarea id="message" name="message" class="form-message"></textarea>
+        <button type="submit" class="form-submit">НАДІСЛАТИ</button>
+      </form>
+    </div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="dist/slick.min.js"></script> 
     <script src="dist/main.js"></script> <!-- Your custom script -->
